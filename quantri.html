@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/quantri.css">
+        <title>Sản Phẩm</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <link href="image/tải xuống (2).jpg" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+        <script src="js/script.js"></script>
+        <script src="https://kit.fontawesome.com/f933a9a1ec.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="cha">
+          <header style="font-size: 25px;" >
+            <div id="logo">             
+                
+                  <img src="image/logo.png" alt="" style="width: 65% ; margin: 0 auto ;" >
+                
+            </div>
+               <div style="padding-top: 10% ;">
+                 <ul>
+                   <li>
+                    <div style="font-size: 150%;border: 1px solid rgb(235, 188, 188);"><a href=""><i class="fa-solid fa-list category_heading_icon"></i> Admin</a></div>                                     
+                   </li>
+                  <li class="li" style="background-color: rgb(236, 245, 137) ;">
+                    <span >Sản Phẩm</span>
+                  </li>
+                  <li class="li">
+                      <a href="quantri/khohang.html">Kho Hàng</a>
+                  </li>
+                  <li class="li">
+                    <a href="quantri/danhsachdonhang.html">Danh Sách Đơn Hàng</a>
+                  </li>
+                  <li class="li">
+                    <a href="quantri/chitietdonhang.html">Chi Tiết Đơn Hàng</a>
+                  </li>
+                  <li class="li">
+                    <a href="quantri/themsp.html">Thêm Sản Phẩm</a>
+                  </li>
+                  <li class="li">
+                    <a href="quantri/suasp.html">Sửa Sản Phẩm</a>
+                  </li>
+                 </ul>
+                 </ul>
+                 <div >
+                    <a href="index.html" id="trangchu">Trang Chủ</a>
+                    <a href="gioithieu.html" >Giới Thiệu</a>
+                  </div>
+               </div>
+          </header> 
+            <main style="width: 100% ; height: 100%;">
+              <div style="width: 100%; height: 130px;background-size: 100%  ;" id="anhnen">
+                <div style="text-align: right ; padding-top: 150px; width: 100%;">
+                  <form method="get" action="#" style="padding-right: 5em;">
+                       <input type="tename="frm-search" method="get" action="timkiem.html"xt" placeholder="Nhập nội dung cần tìm..."
+                       name="words">
+                      <button class="falink" style="height: 5%; width: 8%;"><i class="fas fa-search" style="color:red;"></i></button>
+                   </form>    
+              </div>
+              </div>
+                <div class="width-80">
+                  <h1 style="text-align: center;margin-top: 50px;">Sản Phẩm</h1>
+                  
+                  <table id="chitietdonhang">
+                    <tr>
+                      <td>STT</td>
+                      <td>Mã sản phẩm</td>
+                      <td>Ảnh</td>
+                      <td>Tên Sản Phẩm</td>
+                      <td>Thông Tin Sản Phẩm</td>
+                
+                      <td>Sửa</td>
+                      <td>Xóa</td>
+                    </tr>
+                    <tr id="sp1">
+                      <td>1</td>
+                      <td>sp018</td>
+                      <td><img src="image/sanpham/Qua/cam.webp" style="width:100px "></td>
+                      <td>Cam Sành</td>
+                      <td><a href="sanpham/cam.html" >Cam Sành xuất xứ Viêt Nam</a></td>
+                      
+                      <td><a href="suasp/suasp_sp1.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp1')"></i></a></td>
+                    </tr>
+                    <tr id="sp2">
+                      <td>2</td>
+                      <td>sp017</td>
+                      <td><img src="image/sanpham/Qua/du-du-Acon.webp" style="width:100px"></td>
+                      <td>Đu Đủ</td>
+                      <td><a href="sanpham/dudu.html" >Đu đủ nhà trồng</a></td>
+                      
+                      <td><a href="suasp/suasp_sp2.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp2')"></i></a></td>
+                    </tr>
+                    <tr id="sp3">
+                      <td>3</td>
+                      <td>sp0010</td>
+                      <td><img src="image/sanpham/Rau/cu-carrot.png" style="width:100px"></td>
+                      <td>Cà rốt</td>
+                      <td><a href="sanpham/carrot.html" >Cà rốt Đà Lạt</a></td>
+                      
+                      <td><a href="suasp/suasp_sp3.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp3')"></i></a></td>
+                    </tr>
+                    <tr id="sp4">
+                      <td>4</td>
+                      <td>sp013</td>
+                      <td><img src="image/sanpham/Qua/dua.png" style="width:100px"></td>
+                      <td>Dưa hấu</td>
+                      <td><a href="sanpham/dudu.html" >Dưa hấu nhà trồng</a></td>
+                     
+                      <td><a href="suasp/suasp_sp4.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp4')"></i></a></td>
+                    </tr>
+                    <tr id="sp5">
+                      <td>5</td>
+                      <td>sp003</td>
+                      <td><img src="image/sanpham/Rau/cai-thia.png" style="width:100px"></td>
+                      <td>Cải Thìa</td>
+                      <td><a href="sanpham/caithia.html" >Cải thìa trồng nhà lưới</a></td>
+                     
+                      <td><a href="../suasp/suasp_sp5.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp5')"></i></a></td>
+                    </tr>
+                    <tr id="sp6">
+                      <td>6</td>
+                      <td>sp001</td>
+                      <td><img src="image/sanpham/Rau/bap-cai.webp" style="width:100px"></td>
+                      <td>Bắp Cải Trắng</td>
+                      <td><a href="sanpham/bapcai_trang.html" >Bắp cải trồng nhà lưới</a></td>
+                     
+                      <td><a href="../suasp/suasp_sp6.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp6')"></i></a></td>
+                    </tr>
+                    <tr id="sp7">
+                      <td>7</td>
+                      <td>sp007</td>
+                      <td><img src="image/sanpham/Rau/cu-den.webp" style="width:100px"></td>
+                      <td>Củ Dền</td>
+                      <td><a href="sanpham/cuden.html" >Củ dền trồng nhà lưới</a></td>
+                     
+                      <td><a href="../suasp/suasp_sp7.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp7')"></i></a></td>
+                    </tr>
+                    <tr id="sp8">
+                      <td>8</td>
+                      <td>sp019</td>
+                      <td><img src="image/sanpham/Qua/nam-rom.png" style="width:100px"></td>
+                      <td>Nấm Rơm</td>
+                      <td><a href="sanpham/namrom.html" >Nấm rơm </a></td>
+                     
+                      <td><a href="../suasp/suasp_sp8.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp8')"></i></a></td>
+                    </tr>
+                    <tr id="sp9">
+                      <td>9</td>
+                      <td>sp026</td>
+                      <td><img src="image/sanpham/tinhbot/gaolut_prev_ui.png" style="width:100px"></td>
+                      <td>Gạo Lứt</td>
+                      <td><a href="sanpham/gaolut.html" >Gạo lức</a></td>
+                     
+                      <td><a href="../suasp/suasp_sp9.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp9')"></i></a></td>
+                    </tr>
+                    <tr id="sp10">
+                      <td>10</td>
+                      <td>sp031</td>
+                      <td><img src="image/sanpham/Hat/hatdieu.png" style="width:100px"></td>
+                      <td>Hạt Điều</td>
+                      <td><a href="sanpham/hatdieu.html" >Hạt điều</a></td>
+                     
+                      <td><a href="../suasp/suasp_sp10.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp10')"></i></a></td>
+                    </tr>
+                    <tr id="sp11">
+                      <td>11</td>
+                      <td>sp035</td>
+                      <td><img src="image/sanpham/Hat/dauphong.png" style="width:100px"></td>
+                      <td>Đậu Phộng</td>
+                      <td><a href="sanpham/dauphong.html" >Đậu Phộng</a></td>
+                     
+                      <td><a href="../suasp/suasp_sp11.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp11')"></i></a></td>
+                    </tr>
+                    <tr id="sp12">
+                      <td>12</td>
+                      <td>sp030</td>
+                      <td><img src="image/sanpham/tinhbot/cusan_prev_ui.png" style="width:100px"></td>
+                      <td>Củ Sắn</td>
+                      <td><a href="sanpham/bingo.html" >Củ Sắn</a></td>
+                     
+                      <td><a href="../suasp/suasp_sp12.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp12')"></i></a></td>
+                    </tr>
+                    <tr id="sp13">
+                      <td>13</td>
+                      <td>sp014</td>
+                      <td><img src="image/sanpham/Qua/qua-vai.png" style="width:100px"></td>
+                      <td>Quả Vải</td>
+                      <td><a href="sanpham/vai.html" >Quả Vải</a></td>
+                     
+                      <td><a href="../suasp/suasp_sp13.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp13')"></i></a></td>
+                    </tr>
+                    <tr id="sp14">
+                      <td>14</td>
+                      <td>sp021</td>
+                      <td><img src="image/sanpham/Qua/nam-meo.webp" style="width:100px"></td>
+                      <td>Nấm Mèo</td>
+                      <td><a href="sanpham/nammeo.html" >Nấm Mèo</a></td>
+                     
+                      <td><a href="../suasp/suasp_sp14.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp14')"></i></a></td>
+                    </tr>
+                    <tr id="sp15">
+                      <td>15</td>
+                      <td>sp036</td>
+                      <td><img src="image/sanpham/Hat/caphe.png" style="width:100px"></td>
+                      <td>Hạt Cà Phê</td>
+                      <td><a href="sanpham/caphe.html" >Củ Sắn</a></td>
+                     
+                      <td><a href="../suasp/suasp_sp15.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp15')"></i></a></td>
+                    </tr>
+                    <tr id="sp16">
+                      <td>16</td>
+                      <td>sp004</td>
+                      <td><img src="image/sanpham/Rau/cai-xanh.webp" style="width:100px"></td>
+                      <td>Cải Xanh</td>
+                      <td><a href="sanpham/caixanh.html" >Cải Xanh</a></td>
+                     
+                      <td><a href="../suasp/suasp_sp16.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp16')"></i></a></td>
+                    </tr>
+                    <tr id="sp17">
+                      <td>17</td>
+                      <td>sp008</td>
+                      <td><img src="image/sanpham/Rau/cu-khoai-tay.png" style="width:100px"></td>
+                      <td>Khoai Tây</td>
+                      <td><a href="sanpham/cukhoaitay.html" >Khoai Tây</a></td>
+                     
+                      <td><a href="../suasp/suasp_sp17.html"><i class="fa-regular fa-pen-to-square"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('sp17')"></i></a></td>
+                    </tr>
+
+                  </table>
+                </div>
+            </main>
+        </div>
+        
+        <footer></footer>
+    </body>
+    <script src="js/del.js"></script>
+</html>

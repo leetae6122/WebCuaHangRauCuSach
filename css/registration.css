@@ -1,0 +1,61 @@
+
+#div{
+    border: 1px solid #7557df;
+    background-image: url(../image/background.jpg);
+    box-shadow: 0 0 10px 0 #a29e9e66, 0 0 10px 0 #4443434d;
+    /* display: inline-block; */
+    margin: auto;
+    /* text-align: center; */
+    height: 400px;
+    float: right;
+}
+#table {
+    margin: 0 auto;
+}
+
+#nen{
+    background-color:white;
+    border: 1px solid #8ad7f5;
+    box-shadow: 0 0 5px 0 #a29e9e66, 0 0 5px 0 #4443434d;
+    margin: auto;
+}
+
+#h1{
+    text-align: center;
+    height: 50px;
+    margin: 0 auto;
+}
+
+td{
+    width: 100px;
+}
+
+.dangnhap {
+    margin-top: 100px;
+}
+#h1::after{
+    left: 50%;
+    display: block;
+   position: relative;
+   content: " ";
+   width: 200px;
+   height: 3px;
+   transform: skewX(-12deg) translateX(-50%); 
+   background: radial-gradient(#cddc39, #fff);
+}
+
+
+#hinhanh{
+    padding: 0;
+}
+
+#hinhanh img{
+    margin-top: 40px;
+    width: 100%;
+}
+#baothan{
+    border: 2px solid springgreen;
+    max-width: 1500px;
+    margin: auto;
+    box-shadow: 0 0 10px 0 #a29e9e66, 0 0 10px 0 #4443434d;
+}

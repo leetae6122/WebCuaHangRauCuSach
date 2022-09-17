@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    /* font-size: 100%; */
+}
+
+@media only screen and (min-width: 700px){
+    #cha {
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+}
+
+
+/* header {
+    
+    height: 100vh;
+} */
+
+/* main {
+    background-color: chartreuse;
+} */
+/* ul {
+    padding: 0;
+    list-style-type: none;
+}
+ul li a {
+    color: blanchedalmond;
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 60px;
+    display: block;
+    
+} */
+.dam {
+    background-color: blue;
+}
+#chitietdonhang{
+    margin: 0 auto;
+    border: 2px solid blue;
+    width: 100%;
+    text-align: center;
+}
+#chitietdonhang td{
+    border: 1px solid blue;
+}
+#anhnen{
+
+  background-image: url(../image/maxresdefault.jpg);
+    
+}
+.falink{
+    padding: 4px;
+    min-width: 30px;
+    color: rgb(243, 186, 133);
+    background-color: #05cbf7be;
+}
+.fa-shopping{
+    padding: 4px;
+    min-width: 30px;
+    color: #f08ebc;
+    background-color: #05cbf7be;
+}
+table{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+table td #img{
+    width: 100%;
+}
+
+.width-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+td{
+    padding: 6px;
+}
+
+main{
+    background-color: rgb(240, 255, 253);
+}
+#logo{
+    text-align: center;
+}
+
+.li{
+    padding: 15px;
+    font-size: 20px;
+    border: 1px solid #70797bbe;
+}
+.li:hover {
+    background-color: rgb(230, 248, 32);
+}
+header ul{
+    padding: 0;
+    list-style: none;
+}
+header a{
+    color: rgb(37, 96, 125);
+    text-decoration:none;
+}
+a:hover {
+    color:rgb(146, 95, 247);
+}
+#trangchu{
+    padding: 10px;
+}
+td a{
+    color: rgba(8, 12, 253, 0.975);
+    text-decoration: none;
+}
+table{
+    font-size: 13.5px;
+}
+td img{
+    height: 100%;
+}

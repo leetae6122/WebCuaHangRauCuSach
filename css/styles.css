@@ -1,0 +1,223 @@
+body
+{
+    margin: 0 auto;
+    font: 1.2em Helvetica, arial, sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "header-cell" 
+    "nav-cell" 
+    "main-cell" 
+    "footer-cell";
+}
+main, header, footer
+{
+    border: 1px solid #ccc7c8;
+    background-color: #fff;
+    border-radius: 5px;
+}
+header
+{
+    grid-area: header-cell;
+    margin-bottom: 2px;
+    width: auto;
+    padding: 0 5px;
+    background-image: radial-gradient(0,rgba(2, 2, 2, 0.4),rgba(2, 2, 2, 0.4)),
+        url(../image/vegetables_head.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#logo{
+    border-radius: 100%;
+    width: 120px;
+}
+#logoName{
+    border-radius: 10px;
+    margin: 20px;
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+ul{
+    padding-inline-start: 0px;
+}
+
+.search{
+    margin-top: 20px;
+    text-align: center;
+}
+.search-input{
+    padding: 7px 10px;
+}
+
+nav
+{
+    grid-area: nav-cell;
+    margin: 5px;
+}
+/*  */
+.logReg{
+    display: flex;
+}
+
+
+main
+{
+    grid-area: main-cell;
+    display: grid;
+    padding: 0 5px;
+    background-color: #f5f5f5;
+}
+footer{
+	grid-area: footer-cell;
+	padding: 0 5px;
+	margin-top: 2px;
+    height: auto;
+    font-size: 16px;
+    display: inline;
+}
+#backtop{
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    padding: 10px;
+    color: #ed4190;
+    z-index: 100;
+}
+.round-figure
+{
+	border-radius: 5px;		
+}
+
+.contact h1{
+    font-size: 24px;
+}
+.fa{
+    background: #01cf38;
+    padding: 5px;
+    margin: 2px;
+	min-width: 30px;	
+	color: #fff;
+	text-align: center;
+	cursor:pointer;
+    border-radius: 2px;
+}
+.fterFlex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* Menu đa cấp */
+.container{
+    margin:10px 0px;
+}
+
+.main-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+.main-menu li{
+    position: relative;
+}
+.main-menu li a{
+    display: block;
+    font-weight: bolder;
+    border: 1px solid #fff;
+    color: #01cf38;
+    padding: 10px 15px;
+    margin: 2px;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.main-menu li a:hover{
+    color: #fff;
+    background: #01cf38;
+}
+.main-menu ul.sub-menu{
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    width: 200px;
+    display: none;
+    left: 4px;
+    z-index: 2;
+}
+.main-menu li:hover ul.sub-menu{
+    display: block;  
+}
+.main-menu li ul.sub-menu a:hover{
+    border-bottom: 2px solid #000;
+}
+.main-menu ul.sub-menu a{
+    border-radius: 0px;
+    padding: 8px 15px;
+    border: none;
+    border-bottom: 2px solid #ccc7c8;
+}
+/* Trang chủ */
+.item{
+    margin: 5px;
+    border: 1px solid #0a0909;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+a.item:hover{
+    color: #fff;
+    background: #01cf38;
+}
+.title, .types{
+    text-align: center;
+}
+.title{
+    color: #02b832;
+}
+.types{
+    font-size: 22px;
+}
+#saleMorning{
+    margin: 5px auto;
+    width: 100%;
+}
+.itemFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 55px;
+}
+.serFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.itemSer{
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+.commit{
+    padding: 5px;
+    color: #f5f5f5;
+    background-image: radial-gradient(0,rgba(2, 2, 2, 0.6),rgba(2, 2, 2, 0.6)),
+        url(../image/vegetables_commit.jpg);
+    text-align: center;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.commit p{
+    font-style: italic;
+    color: #dfdfdf;
+}
+button{
+    background: #01cf38;
+    padding: 2px 0px;
+	min-width: 30px;
+}

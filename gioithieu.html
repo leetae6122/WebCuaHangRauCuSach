@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title>
+    <!--  -->
+    
+    <link href="image/vegetableIcon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="stylesheet" href="css/gioithieu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imbue:opsz@10..100&family=Open+Sans:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Imbue:opsz@10..100&family=Open+Sans:ital,wght@1,400;1,600&family=Texturina:opsz,wght@12..72,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="#top" class="col-c-12 col-12 logo">
+                <a  href="index.html">
+                    <img id="logo" src="image/logo.png" alt="Cửa hàng Rau củ sạch Cần Thơ">
+                </a>
+                <img id="logoName" src="image/logoName.png">
+            </div>
+            <div class="mobile">
+                <i class="fa fa-bars">
+                    <ul class="main-menu">
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                        <li><a href="sanpham/sanpham.html">Sản Phẩm</a></li>
+                        <div class="logReg1">
+                            <li><a href="login.html">Đăng Nhập</a></li>
+                            <li><a href="registration.html">Đăng Ký</a></li>
+                        </div>
+                    </ul>
+                </i>
+            </div>
+            <div class="col-c-8 col-12 desktop tablet">
+                <ul class="main-menu">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="sanpham/sanpham.html">Sản Phẩm</a>
+                        <ul class="sub-menu">
+                            <li><a href="sanpham/rau.html">Rau</a></li>
+                            <li><a href="sanpham/cu.html">Củ</a></li>
+                            <li><a href="sanpham/qua.html">Quả</a></li>
+                            <li><a href="sanpham/nam.html">Nấm</a></li>
+                            <li><a href="sanpham/tinhbot.html">Thực phẩm tinh bột</a></li>
+                            <li><a href="sanpham/hat.html">Hạt, đậu</a></li>
+                        </ul>
+                    </li>
+                    <div class="logReg">
+                        <li><a href="login.html">Đăng Nhập</a></li>
+                        <li><a href="registration.html">Đăng Ký</a></li>
+                    </div>
+                </ul>
+            </div> 
+            <div class="search col-c-4 col-12">
+                <form method="get" name='frmsearch' action="timkiem.html">
+                    <div class="search_header">
+                        <input type="text" class="search-input" name='words' onkeypress="checkkeysearch(e)" placeholder="Nhập nội dung cần tìm...">
+                        <button type="submit" onclick="dosearch();"><i class="fa fa-search" ></i></button>
+            
+                            <a href="donhang.html"> <i class="fa fa-shopping-cart"></i></a>
+                        
+                    </div>
+                </form>
+
+                
+            </div>
+        </nav>
+</header>
+
+
+    <main>
+        <div id="khung">
+            <div id="header">CHÀO MỪNG ĐẾN VỚI CỬA HÀNG RAU SẠCH CẦN THƠ</div>
+
+            <div id="gt">
+                <img src="image/sanpham/tinhbot/gt1.png" width="100%" height="300px">
+            </div>
+                <span id="modau">
+                   <h4>
+                        Với tiêu chí sức khỏe khách hàng là trên hết. Cửa hàng Rau sạch Cần Thơ luôn mong muốn
+                    đem đến những trải nghiệm tốt nhất cho người tiêu dùng và mong muốn
+                    sản phẩm đến tay người tiêu dùng luôn tươi ngon đảm bảo chất lượng. Vì thế chúng tôi tuân thủ nghiêm ngặt các quy tắc 
+                    về các khâu nhập và bảo quản sản phẩm sau đây.
+                   </h4>
+                </span>
+            
+            <div id="left">
+            <div id="leftT">
+                 <h3>1.Sản phẩm 100% từ tự nhiên</h3>
+                <div class="natural">
+                   
+                    <img src="image/sanpham/tinhbot/100natural_prev_ui.png" width="200px" alt="">
+                </div>
+                <div class="noidung">
+                    Chúng tôi luôn mong muốn đem lại những sản phẩm tự nhiên nhất, an toàn cho sức khỏe người tiêu dùng.
+                    Vì thế chúng tôi cam kết trong quá trình sử dụng sản phẩm tại Cửa hàng Rau Sạch Cần Thơ sẽ đem lại những trải nghiệm tốt 
+                    nhất cho những khách hàng đang sử dụng sản phẩm tại cửa hàng chúng tôi.
+                </div>
+            </div>
+
+            <div id="leftT">
+                <h3>2.Sản phẩm hữu cơ sạch</h3>
+                <div class="natural">
+
+                    <img src="image/sanpham/tinhbot/organic product_prev_ui.png" width="200px" alt="">
+                </div>
+                <div class="noidung">
+                    Đem đến cho khách hàng những sản phẩm được sử dụng phân hữu cơ và nuôi trồng từ nguồn nước sạch.
+                    Đảm bảo chất lượng trong từng sản phẩm. Làm hài lòng khách hàng từ phần nhìn đến chất lượng là những gì chúng tôi hướng tới.
+                    Và trong tương lai sẽ phát triển hơn thế nữa khi chúng tôi hợp tác cùng các hộ sản xuất nông sản với những phương pháp nuôi trồng hiện đại 
+                    cho ra đời các loại rau củ hữu cơ sạch, chất lượng.
+                </div>
+            </div>
+        </div>
+
+        <div id="right">
+            <div id="rightT">
+                <h3>3.Sản phẩm tươi</h3>
+                <div class="natural">
+                    <img src="image/sanpham/tinhbot/fresh_prev_ui.png" alt="">
+                </div>
+                <span class="noidung">
+                    Các sản phẩm được bảo quản ở nhiệt độ lạnh và quy trình bảo quản nghiêm ngặt để giữ cho những sản phẩm luôn tươi 
+                    khi tới tay người tiêu dùng. Cùng với công nghệ cao và sự kỹ lưỡng trong từ khâu chế biến và bảo quản cửa hàng Rau sạch Cần Thơ 
+                    luôn chắc chắn khi sản phẩm từ lúc mang về đến khi đến tay khách hàng luôn tươi và giữ nguyên thành phần dinh dưỡng.
+                </span>
+            </div>
+        
+            <div id="rightB">
+                 <h3>4.Sản phẩm chất lượng cao</h3>
+                <div class="natural">
+                    <img src="image/sanpham/tinhbot/qua_prev_ui.png" alt="">
+                </div>
+                <div class="noidung">
+                    Những sản phẩm chất lượng cao luôn được kiểm chứng nghiêm ngặt khi đến cửa hàng và được chứng nhận sản phẩm sạch từ các bên có liên quan.
+                    Với các quy trình kép và kiểm tra gắt gao sản phẩm khi nhập về là những sản phẩm chất lượng nhất để phục vụ đến người tiêu dùng.
+                </div>
+            </div>
+        </div>
+        <div id="dat">
+          <a href="sanpham/sanpham.html">Đặt hàng ngay</a> 
+        </div>
+        </div>
+    </main>
+
+
+    <footer class="fterFlex col-c-12 col-12">
+        <div class="intro col-6 col-c-6">
+            <img id="logo" src="image/logo.png" alt="">
+            <p><strong>Cửa hàng Rau sạch Cần Thơ</strong> là nơi chuyên cung cấp các loại rau củ quả sạch, không chất bảo quản, an toàn cho sức khỏe, đáp ứng nhu cầu của tất cả khách hàng.
+            </p>
+            <p>Copyright &copy; 2022 Cửa hàng Rau sạch Cần Thơ</p>
+        </div> 
+        <div class="contact col-6 col-c-6">
+            <h1>Liên hệ</h1>
+            <p><a href="#" ><i class="fa fa-facebook"></i></a> Cửa hàng Rau sạch Cần Thơ</p>
+            <p><a href="#" ><i class="fa fa-phone"></i></a> 0123 456 789</p>
+            <p><a href="#" ><i class="fa fa-envelope"></i></a> rausachCT@gmail.com</p>
+            <p><a href="#" ><i class="fa fa-location-arrow"></i></a> P.Xuân Khánh, Q.Ninh Kiều, TP.Cần Thơ</p>
+        </div>
+        <a id="backtop" href="#top" ><img src="image/top.png" width="40px" alt=""></a>
+    </footer>
+    
+<!-- manafood -->
+</body>
+</html>

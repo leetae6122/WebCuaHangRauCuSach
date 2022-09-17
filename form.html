@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đơn hàng</title>
+    <script src="https://kit.fontawesome.com/7ccdb29924.js" crossorigin="anonymous"></script>
+    <link href="image/vegetableIcon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styledhang.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+
+<body>
+
+
+    <main>
+        <form action=" " method="post " name="regfrm" onsubmit="return checkvalid(this) ">
+
+            <table class="ttgiaohang ">
+                <h1>Thông tin giao hàng</h1>
+                <tr>
+                    <td style=" text-align: left; "> Họ và Tên:</td>
+                    <td><input type="text " placeholder="Vui lòng nhập họ tên " name="hoten"></td>
+                </tr>
+                <tr>
+                    <td>SĐT:</td>
+                    <td><input type="text " name="sdt " placeholder="sđt gồm 10 số "></td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ:</td>
+                    <td><textarea style="width:100% " rows="3 " name="dchi "></textarea></td>
+                </tr>
+                <tr>
+                    <td>Thanh toán:</td>
+                    <td>
+                        <input type="radio " name="thanhtoan " id=" " checked> Trực tiếp
+                        <input type="radio " name="thanhtoan " id=" "> Online
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit ">Đăng Ký</button></td>
+                </tr>
+            </table>
+        </form>
+
+
+
+
+
+    </main>
+
+
+
+</body>
+
+</html>

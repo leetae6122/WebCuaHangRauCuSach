@@ -1,0 +1,9 @@
+#chitietdonhang{
+    margin: auto;
+    border: 2px solid blue;
+    width: 100%;
+    text-align: center;
+}
+#chitietdonhang td{
+    border: 1px solid blue;
+}

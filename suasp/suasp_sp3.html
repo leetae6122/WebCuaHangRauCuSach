@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/quantri.css">
+        <title>Sửa Sản Phẩm</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/7ccdb29924.js"></script>
+        <link href="../image/tải xuống (2).jpg" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/add_edit.css">
+        <script src="../js/edit.js"></script>
+    </head>
+    <body>
+        <div id="cha">
+            <header style="font-size: 25px;" >
+                <div id="logo">             
+                      <img src="../image/logo.png" alt="" style="width: 65% ; margin: 0 auto;" >
+                </div>
+                   <div style="padding-top: 10% ;">
+                     <ul>
+                       <li>
+                        <div style="font-size: 150%;border: 1px solid rgb(235, 188, 188);"><a href=""><i class="fa-solid fa-list category_heading_icon"></i> Admin</a></div>                                     
+                       </li>
+                      <li class="li">
+                        <a href="../quantri.html">Sản Phẩm</a>
+                      </li>
+                      <li class="li" style="background-color: rgb(236, 245, 137) ;">
+                          <a href="../quantri/khohang.html" >Kho Hàng</a>
+                      </li>
+                      <li class="li">
+                        <a href="../quantri/danhsachdonhang.html">Danh Sách Đơn Hàng</a>
+                      </li>
+                      <li class="li">
+                        <a href="../quantri/chitietdonhang.html">Chi Tiết Đơn Hàng</a>
+                      </li>
+                      <li class="li">
+                        <a href="../quantri/themsp.html">Thêm Sản Phẩm</a>
+                      </li>
+                      <li class="li">
+                        <a href="../quantri/suasp.html">Sửa Sản Phẩm</a>
+                      </li>
+                     </ul>
+                     
+                     <div>
+                        <a href="../index.html" id="trangchu"> Trang Chủ </a>
+                        <a href="../gioithieu.html">Giới Thiệu</a>
+                      </div>
+                   </div>
+              </header>  
+            <main style="width: 100% ; height: 100%;">
+                <div style="width: 100%; height: 130px;background-size: 100%  ;" id="anhnen">
+                    <div style="text-align: right ; padding-top: 150px; width: 100%;">
+                      <form method="get" action="#" style="padding-right: 5em;">
+                           <input type="tename="frm-search" method="get" action="timkiem.html"xt" placeholder="Nhập nội dung cần tìm..."
+                           name="words">
+                          <button class="falink" style="height: 5%; width: 8%;"><i class="fas fa-search" style="color:red;"></i></button>
+                       </form>    
+                  </div>
+                </div>
+
+                
+                <div class="frm">
+                    <div class="title">Cập Nhật Sản Phẩm</div>
+                    <form name="regfr" action="reg.php" method="POST" enctype="multipart/form-data" onsubmit="return frmValidate()">
+                        <table id="t1">
+                            <tr>
+                                <th>Hình ảnh:</th>
+                                <td id="img">
+                                    <img src="../image/sanpham/Rau/cucarot_pev_ui.png" alt="" style="width:100px"></td>
+                                <td><input id="ha" required type="file" name="ha" onchange="addimg()"></td>
+                            </tr>
+                            
+                            <tr>
+                                <th>Mã Sản phẩm:</th>
+                                <td><input value="sp010" required maxlength="5" type="text" name="masp"
+                                    placeholder="5 ký tự"></td>
+                            </tr>
+                            <tr>
+                                <th>Tên Sản phẩm:</th>
+                                <td><input value="Cà rốt" required type="text" name="tensp"
+                                    placeholder="không rỗng"></td>
+                            </tr>
+                            <tr>
+                                <th>Loại Sản phẩm:</th>
+                                <td>
+                                    <select required>
+                                        <option value="">--Chọn loại--</option>
+                                        <option value="Rau">Rau</option>
+                                        <option selected value="Cu">Củ</option>
+                                        <option value="Qua">Quả</option>
+                                        <option value="Nam">Nấm</option>
+                                        <option value="TinhBot">Thực phẩm tinh bột</option>
+                                        <option value="HatDau">Hạt, đậu</option>                               
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Số lượng tồn:</th>
+                                <td><input value="2" required pattern="\d" type="number" name="sl"
+                                    placeholder="là số dương"> kg</td>
+                            </tr>
+                            <tr>
+                                <th>Giá bán:</th>
+                                <td><input value="15.000" id="dg" required pattern="\d" type="number" name="dg"
+                                    placeholder="là số, đơn vị VNĐ"> vnđ / kgt</td>
+                            </tr>
+                            <tr>
+                                <th colspan="2" style="font-size: 22px ;">Thông tin sản phẩm:</th>
+                            </tr>
+                            <tr>
+                                <th>Tiêu đề:</th>
+                                <td><input id="" type="text" name="" value="Cà rốt Đà Lạt"></td>
+                            </tr>
+                            <tr>
+                                <th>Nội dụng:</th>
+                                <td colspan="2"><textarea cols="30" rows="10" >Thành phần dinh dưỡng: hàm lượng chất dinh dưỡng và vitamin A cao, cà rốt được xem là một nguyên liệu cần thiết cho các món ăn dặm của trẻ nhỏ, giúp trẻ sáng mắt và cung cấp nguồn chất xơ dồi dào
+                                    Cách dùng: Cà rốt có thể chế biến thành nước ép cà rốt cam và củ dền, nước ép cà rốt và cà chua, sinh tố cà rốt. Ngoài ra, cà rốt cũng có thể làm cà rốt, củ cải chua ăn kèm với thịt nguội, chả lụa cho các bữa tiệc
+                                    Bảo quản cà rốt ở nơi thoáng mát, tránh ánh nắng mặt trời có thể giữ trong 3 tuần.</textarea></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input id="btn" type="submit" value="Sửa sản phẩm">
+                                    <input type="reset" value="Hủy">
+                                </td>
+                            </tr>
+        
+                        </table>
+                    </form>
+                </div>    
+            </main>
+        </div>
+        <footer></footer>
+    </body>
+</html>

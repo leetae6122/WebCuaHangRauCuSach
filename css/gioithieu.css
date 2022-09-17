@@ -1,0 +1,133 @@
+* {
+    marging: 0 auto;
+    padding: 0 auto;
+}
+
+#header {
+    padding-top: 20px;
+    font-size: 40px;
+    text-align: center;
+    font-size: 'Open Sans', sans-serif;
+}
+
+#khung {
+    background-color: white;
+}
+
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+#gt {
+    width: 100%;
+}
+
+#leftT {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+body {
+    background-color: #ecf0f1;
+}
+
+#modau {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Imbue', serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header {
+    color: #009432;
+    font-weight: bold;
+    font-family: 'Imbue', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Texturina', serif;
+}
+
+.noidung {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#right {
+    padding-bottom: 50px;
+}
+
+#leftT img {
+    max-width: 180px;
+    max-height: 180px;
+}
+
+.leftT {
+    width: 100%;
+}
+
+.natural {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+}
+
+.noidung {
+    width: 65%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.natural img {
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+    /*text-decoration: underline 2px ;*/
+    text-shadow: 0 2px 0 #95a5a6;
+}
+
+#rightT img {
+    max-width: 180px;
+    max-height: 180px;
+    width: 100%;
+}
+
+#rightB img {
+    max-width: 180px;
+    max-height: 180px;
+    width: 100%;
+}
+
+#dat {
+    text-align: center;
+    padding: 0 auto;
+    border: solid 1px black;
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    background-color: #1cd559;
+    font-weight: bold;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+#dat a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.fa-shopping-cart {
+    padding-bottom: 9px;
+    padding-top: 3px;
+    padding-right: 7px;
+    border-radius: 0px;
+    margin-top: 0px;
+}

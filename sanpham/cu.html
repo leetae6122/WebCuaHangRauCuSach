@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm</title>
+    
+    
+    
+    <!--  -->
+    <link href="../image/vegetableIcon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/sanpham_style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
+    <link rel="stylesheet" href="../css/grid_system.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="#top" class="col-c-12 col-12 logo">
+                <a  href="../index.html">
+                    <img id="logo" src="../image/logo.png" alt="Cửa hàng Rau củ sạch Cần Thơ">
+                </a>
+                <img id="logoName" src="../image/logoName.png">
+            </div>
+            <div class="mobile">
+                <i class="fa fa-bars">
+                    <ul class="main-menu">
+                        <li><a href="../index.html">Trang Chủ</a></li>
+                        <li><a href="../gioithieu.html">Giới Thiệu</a></li>
+                        <li><a href="sanpham.html">Sản Phẩm</a></li>
+                        <div class="logReg1">
+                            <li><a href="../login.html">Đăng Nhập</a></li>
+                            <li><a href="../registration.html">Đăng Ký</a></li>
+                        </div>
+                    </ul>
+                </i>
+            </div>
+            <div class="col-c-8 col-12 desktop tablet">
+                <ul class="main-menu">
+                    <li><a href="../index.html">Trang Chủ</a></li>
+                    <li><a href="../gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="sanpham.html">Sản Phẩm</a>
+                        <ul class="sub-menu">
+                            <li><a href="rau.html">Rau</a></li>
+                            <li><a href="cu.html">Củ</a></li>
+                            <li><a href="qua.html">Quả</a></li>
+                            <li><a href="nam.html">Nấm</a></li>
+                            <li><a href="tinhbot.html">Thực phẩm tinh bột</a></li>
+                            <li><a href="hat.html">Hạt, đậu</a></li>
+                        </ul>
+                    </li>
+                    <div class="logReg">
+                        <li><a href="../login.html">Đăng Nhập</a></li>
+                        <li><a href="../registration.html">Đăng Ký</a></li>
+                    </div>
+                </ul>
+            </div> 
+            <div class="search col-c-4 col-12">
+                <form method="get" name='frmsearch' action="../timkiem.html">
+                    <div class="search_header">
+                        <input type="text" class="search-input" name='words' onkeypress="checkkeysearch(e)" placeholder="Nhập nội dung cần tìm...">
+                        <button type="submit" onclick="dosearch();"><i class="fa fa-search" ></i></button>
+            
+                            <a href="../donhang.html"> <i class="fa fa-shopping-cart"></i></a>
+                        
+                    </div>
+                </form>
+
+                
+            </div>
+        </nav>
+    </header>
+    <!--  -->
+    <main>
+        <div class="grid">
+            <div class="row">
+                <div class="col l-3 m-3 c-12 border">
+                    <nav class="category">
+
+                        <h3 class="category_heading">
+                            <i class="fa fa-list category_heading_icon"></i> Danh Mục
+                        </h3>
+
+                        <ul class="category_list">
+                            <li class="category_list_item">
+                                <a href="../sanpham/rau.html" class="category_item_link">Rau</a>
+                            </li>
+                            <li class="category_list_item">
+                                <span class="category_item_link category_item_selected">Củ</span>
+                            </li>
+                            <li class="category_list_item">
+                                <a href="../sanpham/qua.html" class="category_item_link">Quả</a>
+                            </li>
+                            <li class="category_list_item">
+                                <a href="../sanpham/nam.html" class="category_item_link">Nấm</a>
+                            </li>
+                            <li class="category_list_item">
+                                <a href="../sanpham/tinhbot.html" class="category_item_link">Thực Phẩm Tinh Bột</a>
+                            </li>
+                            <li class="category_list_item">
+                                <a href="../sanpham/hat.html" class="category_item_link">Hạt, Đậu</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col l-9 m-9 c-12 border">
+                    <div>
+                        <div class="loai_sp"><img src="../image/sanpham/Rau/cu-icon.png" alt="" class="icon_sp">
+                            <a class="product_heading" href="../sanpham/cu.html">
+                               Củ
+                            </a></div>
+                        <div class="row">
+
+                            <div class="col l-4 m-6 c-12 border">
+                                <div class="product">
+                                    <a href="cuden.html">
+                                        <img src="../image/sanpham/Rau/cu-den.webp" alt="">
+                                    </a>
+                                    <div class="product_content">
+                                        <h3>Củ Dền</h3>
+                                        <div class="product_price">
+                                            <span>Giá: 25.000đ/kg </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col l-4 m-6 c-12 border">
+                                <div class="product">
+                                    <a href="cukhoaitay.html">
+                                        <img src="../image/sanpham/Rau/cu-khoai-tay.png" alt="">
+                                    </a>
+                                    <div class="product_content">
+                                        <h3>Củ Khoai Tây</h3>
+                                        <div class="product_price">
+                                            <span>Giá: 17.000đ </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4 m-6 c-12 border">
+                                <div class="product">
+                                    <a href="khoailang_tim.html">
+                                        <img src="../image/sanpham/Rau/khoai-lang-tim.png" alt="">
+                                    </a>
+                                    <div class="product_content">
+                                        <h3>Củ Khoai Lang Tím</h3>
+                                        <div class="product_price">
+                                            <span>Giá: 17.000đ </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4 m-6 c-12 border">
+                                <div class="product">
+                                    <a href="carrot.html">
+                                        <img src="../image/sanpham/rau/cucarot_prev_ui.png" alt="">
+                                    </a>
+                                    <div class="product_content">
+                                        <h3>Củ Carrot </h3>
+                                        <div class="product_price">
+                                            <span>Giá: 20.000đ </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col l-4 m-6 c-12 border">
+                                <div class="product">
+                                    <a href="khoailang_vang.html">
+                                        <img src="../image/sanpham/Rau/khoai-lang-vang.png" alt="">
+                                    </a>
+                                    <div class="product_content">
+                                        <h3>Củ Khoai Lang Vàng</h3>
+                                        <div class="product_price">
+                                            <span>Giá: 20.000đ </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4 m-6 c-12 border">
+                                <div class="product">
+                                    <a href="khoaimo_tim.html">
+                                        <img src="../image/sanpham/Rau/khoaimo_prev_ui.png" alt="">
+                                    </a>
+                                    <div class="product_content">
+                                        <h3>Khoai Mỡ Tím</h3>
+                                        <div class="product_price">
+                                            <span>Giá: 20.000đ </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <!--  -->
+    <footer class="fterFlex col-c-12 col-12">
+        <div class="intro col-6 col-c-6">
+            <img id="logo" src="../image/logo.png" alt="">
+            <p><strong>Cửa hàng Rau sạch Cần Thơ</strong> là nơi chuyên cung cấp các loại rau củ quả sạch, không chất bảo quản, an toàn cho sức khỏe, đáp ứng nhu cầu của tất cả khách hàng.
+            </p>
+            <p>Copyright &copy; 2022 Cửa hàng Rau sạch Cần Thơ</p>
+        </div> 
+        <div class="contact col-6 col-c-6">
+            <h1>Liên hệ</h1>
+            <p><a href="#" ><i class="fa fa-facebook"></i></a> Cửa hàng Rau sạch Cần Thơ</p>
+            <p><a href="#" ><i class="fa fa-phone"></i></a> 0123 456 789</p>
+            <p><a href="#" ><i class="fa fa-envelope"></i></a> rausachCT@gmail.com</p>
+            <p><a href="#" ><i class="fa fa-location-arrow"></i></a> P.Xuân Khánh, Q.Ninh Kiều, TP.Cần Thơ</p>
+        </div>
+        <a id="backtop" href="#top" ><img src="../image/top.png" width="40px" alt=""></a>
+    </footer>
+
+</body>
+
+</html>

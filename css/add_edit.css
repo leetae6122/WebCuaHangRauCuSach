@@ -1,0 +1,30 @@
+#t1{
+    width: 80%;
+    text-align: left;  
+    font-size: 16px;
+    border: 2px solid cornflowerblue;
+    background-color: white;
+}
+
+.frm{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.title{
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 0px;
+    font-size: 30px;
+}
+#t1 th{
+    padding-left: 150px;
+}
+.list{
+    background-color: #fff;
+    margin: auto;
+    border: 2px solid steelblue;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: large;
+    height: auto;
+}

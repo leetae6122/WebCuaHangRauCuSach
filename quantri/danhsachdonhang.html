@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/quantri.css">
+        <title>Danh Sách Đơn Hàng</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <link href="../image/tải xuống (2).jpg" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+        <script src="https://kit.fontawesome.com/f933a9a1ec.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="cha">
+          <header style="font-size: 25px;" >
+            <div id="logo">             
+                  <img src="../image/logo.png" alt="" style="width: 65% ; margin: 0 auto;" >
+            </div>
+               <div style="padding-top: 10% ;">
+                 <ul>
+                   <li>
+                    <div style="font-size: 150%;border: 1px solid rgb(235, 188, 188);"><a href=""><i class="fa-solid fa-list category_heading_icon"></i> Admin</a></div>                                     
+                   </li>
+                  <li class="li">
+                    <a href="../quantri.html">Sản Phẩm</a>
+                  </li>
+                  <li class="li">
+                      <a href="../quantri/khohang.html">Kho Hàng</a>
+                  </li>
+                  <li class="li" style="background-color: rgb(236, 245, 137) ;">
+                    <spans>Danh Sách Đơn Hàng</spans>
+                  </li>
+                  <li class="li">
+                    <a href="../quantri/chitietdonhang.html">Chi Tiết Đơn Hàng</a>
+                  </li>
+                  <li class="li">
+                    <a href="../quantri/themsp.html">Thêm Sản Phẩm</a>
+                  </li>
+                  <li class="li">
+                    <a href="../quantri/suasp.html">Sửa Sản Phẩm</a>
+                  </li>
+                 </ul>
+                 
+                 <div>
+                    <a href="../index.html" id="trangchu"> Trang Chủ </a>
+                    <a href="../gioithieu.html">Giới Thiệu</a>
+                  </div>
+               </div>
+          </header> 
+
+            <main style="width: 100% ; height: 100%;">
+              <div style="width: 100%; height: 130px;background-size: 100%  ;" id="anhnen">
+                <div style="text-align: right ; padding-top: 150px; width: 100%;">
+                  <form method="get" action="#" style="padding-right: 5em;">
+                       <input type="tename="frm-search" method="get" action="timkiem.html"xt" placeholder="Nhập nội dung cần tìm..."
+                       name="words">
+                      <button class="falink" style="height: 5%; width: 8%;"><i class="fas fa-search" style="color:red;"></i></button>
+            
+                   </form>    
+              </div>
+              </div>
+                <div class="width-80">
+                  <h1 style="text-align: center;margin-top: 50px;">Đơn Hàng</h1>
+                  
+                  <table id="chitietdonhang">
+                    <tr>
+                      <td>Mã đơn hàng</td>
+                      <td>Tên Khách hàng</td>
+                      <td>Số điện thoại</td>
+                      <td>Ngày đặt hàng</td>
+                      <td>Trạng thái</td>
+                      <td>Chi tiết</td>
+                      <td>Xóa</td>
+                    </tr>
+                    <tr id="dh1">
+                        <td>dh1</td>
+                        <td class="td">Nguyen Thi Linh</td>
+                        <td>0123124349</td>
+                        <td>12:30 21/12/2021</td>
+                        <td>đã xử lý</td>
+                        <td><a href="chitietdonhang.html"><i class="fa-solid fa-circle-info"></i></a></td>
+                        <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('dh1')"></i></a></td>
+                    </tr>
+                    <tr id="dh2">
+                        <td>dh2</td>
+                        <td class="td">Nguyen Lan Anh</td>
+                        <td>0312893120</td>
+                        <td>11:30 1/11/2021</td>
+                        <td>chưa xử lý</td>
+                        <td><a href="chitietdh1.html"><i class="fa-solid fa-circle-info"></i></a></td>
+                        <td><a href="#"><i class="fa-regular fa-trash-can" onclick="deleteSp('dh2')"></i></a></td>
+                    </tr>
+                    <tr id="dh3">
+                      <td>dh3</td>
+                      <td class="td">Trần Công Trí</td>
+                      <td>0312312312</td>
+                      <td>12:30 21/9/2021</td>
+                      <td>đã xử lý</td>
+                      <td><a href="#"><i class="fa-solid fa-circle-info"></i></a></td>
+                      <td><a href="#"><i class="fa-regular fa-trash-can"  onclick="deleteSp('dh3')"></i></a></td>
+                  </tr>
+                  <tr id="dh4">
+                    <td>dh4</td>
+                    <td class="td">Trần Minh Quân</td>
+                    <td>0921231231</td>
+                    <td>12:00 21/3/2021</td>
+                    <td>chưa xử lý</td>
+                    <td><a href="#"><i class="fa-solid fa-circle-info"></i></a></td>
+                    <td><a href="#"><i class="fa-regular fa-trash-can"  onclick="deleteSp('dh4')"></i></a></td>
+                </tr>
+                <tr id="dh5">
+                  <td>dh5</td>
+                  <td class="td">Nguyễn Thanh Tâm</td>
+                  <td>0931241412</td>
+                  <td>9:30 22/9/2021</td>
+                  <td>chưa xử lý</td>
+                  <td><a href="#"><i class="fa-solid fa-circle-info"></i></a></td>
+                  <td><a href="#"><i class="fa-regular fa-trash-can"  onclick="deleteSp('dh5')"></i></a></td>
+              </tr>
+                  </table>
+                </div>
+            </main>
+        </div>
+        
+        <footer></footer>
+    </body>
+    <script src="../js/del.js"></script>
+</html>

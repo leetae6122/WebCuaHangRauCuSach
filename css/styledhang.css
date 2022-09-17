@@ -1,0 +1,87 @@
+h1,
+thead {
+    color: #14a70d;
+    text-align: center;
+}
+
+table button {
+    background-color: #ffe67c;
+    color: #295f2c;
+    font-weight: bold;
+}
+
+table i {
+    text-align: center;
+    background-color: #ffe67c;
+    color: #295f2c;
+    text-align: center;
+    min-width: 30px;
+    height: 20px;
+    padding: 4px;
+    display: inline-block;
+}
+
+i:hover,
+button:hover {
+    color: #ffe67c;
+    background-color: #295f1c;
+    font-weight: bold;
+    box-shadow: 0 0 2px 0 #000000d4;
+}
+
+#dhang {
+    margin-bottom: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#dhang {
+    width: 80%;
+    margin: 0 auto;
+}
+
+tbody td {
+    text-align: center;
+    border: 1px solid rgb(135, 212, 116);
+}
+
+tfoot td {
+    border: 1px solid rgb(135, 212, 116);
+}
+
+#list_sp td img {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ttgiaohang {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.ttgiaohang td {
+    text-align: left;
+    border: none;
+    padding-top: 10px;
+}
+
+.ttgiaohang input[type='text'] {
+    font-size: 20px;
+    width: 100%;
+}
+
+.ttgiaohang input[type='submit'] {
+    text-align: center;
+}
+
+.ttgiaohang input[type='submit'],
+button {
+    text-align: center;
+    border: none;
+}
